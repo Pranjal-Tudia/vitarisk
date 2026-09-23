@@ -9,7 +9,7 @@
 ## 🌟 Key Features
 
 - **⚡ Instant AI Risk Stratification**: Calibrated cardiovascular risk probabilities across Low, Moderate, and High clinical tiers.
-- **💓 Dynamic ECG Heartbeat Waveform**: Live animated cardiac pulse line with dark/light mode adaptation.
+- **💓 Dynamic ECG Heartbeat Waveform**: Live animated cardiac pulse line with adaptive dark/light mode switching.
 - **🔍 Interpretable Risk Driver Attribution**: Factor-by-factor risk attribution breakdown (Hypertension, Cholesterol, BMI, Smoking, Alcohol, Sedentary Lifestyle).
 - **🏃 Quick Clinical Demo Presets**: One-click preset profiles for rapid evaluation (Healthy Adult, Borderline Case, Hypertensive Patient).
 - **🖨️ Clinical Diagnostic PDF Export**: Hospital-style printable diagnostic reports.
@@ -25,7 +25,7 @@
 | **Precision** | **76.43%** |
 | **Recall** | **67.39%** |
 | **F1-Score** | **71.62%** |
-| **Dataset Size** | 65,452 patient records |
+| **Training Records** | 65,452 patients |
 
 ---
 
@@ -34,21 +34,3 @@
 - **Machine Learning**: Scikit-Learn, NumPy, Pandas
 - **Backend API**: Python, Flask, Gunicorn, Waitress
 - **Frontend UI**: React, Custom Carbon Theme, SVG Radial Gauges, CSS3 Animations
-
----
-
-## 💻 Local Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/Pranjal-Tudia/vitarisk.git
-cd vitarisk
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the application
-python app.py
-```
-
-Open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser.
