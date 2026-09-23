@@ -1,39 +1,39 @@
 # 🫀 VitaRisk — AI-Powered Cardiovascular Risk Stratification
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Pranjal-Tudia/vitarisk)
+**VitaRisk** is a clinical decision support system powered by Machine Learning (**Random Forest Classifier**, 73.03% validation accuracy) trained on 65,452 patient records.
 
-**VitaRisk** is a clinical decision support web application powered by Machine Learning (**Random Forest Classifier**, 73.03% validation accuracy) trained on 65,452 patient records.
+🌐 **Live Application:** [https://vitarisk.onrender.com](https://vitarisk.onrender.com)
 
 ---
 
 ## 🌟 Key Features
 
-- **⚡ Instant AI Risk Stratification**: Computes calibrated cardiovascular risk probability scores (Low / Moderate / High tiers).
-- **💓 Dynamic ECG Heartbeat Waveform**: Moving cardiac pulse animation with adaptive dark/light theme switching.
-- **🔍 Interpretable Risk Driver Attribution**: Color-coded breakdown of contributing risk factors (Hypertension, Cholesterol, BMI, Tobacco, Sedentary activity).
-- **🏃 Quick Clinical Demo Presets**: Instant load presets for rapid evaluation (Healthy Adult, Borderline Case, Hypertensive Patient).
-- **🖨️ One-Click Clinical Diagnostic PDF Report**: Generates print-ready diagnostic summaries.
+- **⚡ Instant AI Risk Stratification**: Calibrated cardiovascular risk probabilities across Low, Moderate, and High clinical tiers.
+- **💓 Dynamic ECG Heartbeat Waveform**: Live animated cardiac pulse line with dark/light mode adaptation.
+- **🔍 Interpretable Risk Driver Attribution**: Factor-by-factor risk attribution breakdown (Hypertension, Cholesterol, BMI, Smoking, Alcohol, Sedentary Lifestyle).
+- **🏃 Quick Clinical Demo Presets**: One-click preset profiles for rapid evaluation (Healthy Adult, Borderline Case, Hypertensive Patient).
+- **🖨️ Clinical Diagnostic PDF Export**: Hospital-style printable diagnostic reports.
 
 ---
 
-## 🏗️ Architecture
+## 📊 Model Performance Metrics
 
-- **Backend**: Python, Flask, Waitress / Gunicorn, Scikit-Learn, NumPy, Pandas
-- **Frontend**: React (Custom Carbon Dark Theme, Mobile-First Responsive Grid, SVG Radial Gauges)
-- **Model**: Random Forest (100 Estimators, max_depth=10)
+| Metric | Score |
+|---|---|
+| **Algorithm** | Random Forest Classifier (100 Estimators) |
+| **Validation Accuracy** | **73.03%** |
+| **Precision** | **76.43%** |
+| **Recall** | **67.39%** |
+| **F1-Score** | **71.62%** |
+| **Dataset Size** | 65,452 patient records |
 
 ---
 
-## 🚀 Live Cloud Deployment (Render)
+## 🏗️ Architecture & Tech Stack
 
-Click the button below to deploy this repository directly to Render for free:
-
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Pranjal-Tudia/vitarisk)
-
-Or deploy manually on [Render.com](https://render.com):
-- **Environment**: Python
-- **Build Command**: `pip install -r requirements.txt`
-- **Start Command**: `gunicorn app:app`
+- **Machine Learning**: Scikit-Learn, NumPy, Pandas
+- **Backend API**: Python, Flask, Gunicorn, Waitress
+- **Frontend UI**: React, Custom Carbon Theme, SVG Radial Gauges, CSS3 Animations
 
 ---
 
